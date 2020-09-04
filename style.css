@@ -7,11 +7,17 @@
 body {
   background-image: linear-gradient(120deg, #e2c35d, #d88771);
   color: #fff;
-  font-family: "Poppins", sans-serif;
+
+  font-family: "Roboto", sans-serif;
   min-height: 100vh;
 }
 header {
   font-size: 1.5rem;
+}
+header h1 {
+  font-family: "Monoton", cursive;
+  letter-spacing: 3px;
+  color: 
 }
 header,
 form {
@@ -58,6 +64,11 @@ form button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
 }
 .todo li {
   flex: 1;
@@ -84,4 +95,5 @@ form button:hover {
 }
 .completed {
   text-decoration: line-through;
+  opacity: 0.5;
 }
