@@ -17,7 +17,7 @@ header {
 header h1 {
   font-family: "Monoton", cursive;
   letter-spacing: 3px;
-  color: 
+  color: #000;
 }
 header,
 form {
@@ -96,4 +96,46 @@ form button:hover {
 .completed {
   text-decoration: line-through;
   opacity: 0.5;
+}
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  -webkit-transform: translateY(8rem) rotateZ(20deg);
+  -moz-transform: translateY(8rem) rotateZ(20deg);
+  -ms-transform: translateY(8rem) rotateZ(20deg);
+  -o-transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+select {
+  appearance: none;
+  outline: none;
+  border: none;
+}
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+select {
+  color: #ff6f47;
+  width: 10rem;
+  cursor: pointer;
+  padding: 1rem;
+}
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  background: #ff6f47;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease ;
+  -moz-transition: all 0.3s ease ;
+  -ms-transition: all 0.3s ease ;
+  -o-transition: all 0.3s ease ;
+}
+.select:hover::after {
+  background: #fff;
+  color: #ff6f47;
 }
